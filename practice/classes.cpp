@@ -1,6 +1,6 @@
 #include <iostream>
  
-
+#include "fstream"
  class subject {
      public:
 
