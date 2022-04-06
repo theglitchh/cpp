@@ -17,6 +17,9 @@ class circle {
     void showArea () {
         cout << 3.14 *r*r << endl;
     }
+    ~circle() {
+        
+    }
 };
 
 int main (){
