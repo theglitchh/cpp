@@ -1,0 +1,7 @@
+{
+  "C_Cpp_Runner.msvcBatchPath": "",
+  "files.associations": {
+    "string": "cpp",
+    "string_view": "cpp"
+  }
+}
