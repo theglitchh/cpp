@@ -71,31 +71,25 @@ void SearchMax(node* root){
         return;
     }
     stack<node*>s;
-    node* maxval;
+    int sizeval = 0;
     s.push(root);
+    sizeval++;
 while (!s.empty()){
     node* current = s.top();
     s.pop();
-    if(current->left !=nullptr){
-        if(current->left->data > current->data)
-        {
+    if(current->left !=nullptr){ 
         s.push(current->left);
-        maxval = s.top();
-        }
-
+        sizeval++;
     }
-     if(current->right !=nullptr){
-        if(current->right->data > current->data)
-        {
+     if(current->right !=nullptr){     
         s.push(current->right);
-         maxval = s.top();
-        }
-
+        sizeval++;
     }
 
     }
+    cout << sizeval << endl;
 
-    cout << maxval->data << endl;
+   // cout << maxval->data << endl;
 } 
 
 };
